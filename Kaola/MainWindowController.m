@@ -97,6 +97,9 @@
         playButton.image = [NSImage imageNamed:@"pausebutton"];
 	}
 	else if ([_streamer isPlaying]) {
+        if (!_progressUpdateTimer) {
+            _progressUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
+        }
         playButton.image = [NSImage imageNamed:@"stopbutton"];
 	}
 	else if ([_streamer isIdle]) {
@@ -108,6 +111,7 @@
 - (void)nextone
 {
     [programTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:_currentPlayIndex] byExtendingSelection:NO];
+    [programTableView scrollRowToVisible:_currentPlayIndex];
     [self createStreamer];
     [_streamer start];
 }
@@ -125,7 +129,7 @@
 	NSURL *url = [NSURL URLWithString:_currentPlayURL];
 	_streamer = [[AudioStreamer alloc] initWithURL:url];
 	
-	_progressUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
+//	_progressUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
 	[[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(playbackStateChanged:)
                                                  name:ASStatusChangedNotification
