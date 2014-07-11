@@ -18,6 +18,25 @@
 		4DD8DBE8196FBD4C0067196D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DBC7196FBD4C0067196D /* Cocoa.framework */; };
 		4DD8DBF0196FBD4C0067196D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8DBEE196FBD4C0067196D /* InfoPlist.strings */; };
 		4DD8DBF2196FBD4C0067196D /* KaolaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DBF1196FBD4C0067196D /* KaolaTests.m */; };
+		4DD8DBFF196FBDA40067196D /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DBFE196FBDA40067196D /* MainWindowController.m */; };
+		4DD8DC02196FBDB50067196D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8DC00196FBDB50067196D /* MainWindow.xib */; };
+		4DD8DC17196FBE270067196D /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC07196FBE270067196D /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC18196FBE270067196D /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC09196FBE270067196D /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC19196FBE270067196D /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC0B196FBE270067196D /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC1A196FBE270067196D /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC0D196FBE270067196D /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC1B196FBE270067196D /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC0F196FBE270067196D /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC1C196FBE270067196D /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC13196FBE270067196D /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC1D196FBE270067196D /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC15196FBE270067196D /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC21196FBE590067196D /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC20196FBE590067196D /* RXMLElement.m */; };
+		4DD8DC23196FBEA40067196D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC22196FBEA40067196D /* CFNetwork.framework */; };
+		4DD8DC25196FBEAA0067196D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC24196FBEAA0067196D /* SystemConfiguration.framework */; };
+		4DD8DC27196FBEAE0067196D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC26196FBEAE0067196D /* QuartzCore.framework */; };
+		4DD8DC29196FBEB20067196D /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC28196FBEB20067196D /* libxml2.2.dylib */; };
+		4DD8DC2B196FBEB70067196D /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC2A196FBEB70067196D /* libz.1.2.5.dylib */; };
+		4DD8DC2D196FBEC00067196D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC2C196FBEC00067196D /* CoreServices.framework */; };
+		4DD8DC31196FBF400067196D /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC30196FBF400067196D /* Program.m */; };
+		4DD8DC35196FC4AE0067196D /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8DC34196FC4AE0067196D /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DD8DC37196FC78B0067196D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD8DC36196FC78B0067196D /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +69,40 @@
 		4DD8DBED196FBD4C0067196D /* KaolaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KaolaTests-Info.plist"; sourceTree = "<group>"; };
 		4DD8DBEF196FBD4C0067196D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DD8DBF1196FBD4C0067196D /* KaolaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaolaTests.m; sourceTree = "<group>"; };
+		4DD8DBFD196FBDA40067196D /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		4DD8DBFE196FBDA40067196D /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		4DD8DC01196FBDB50067196D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4DD8DC05196FBE270067196D /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		4DD8DC06196FBE270067196D /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		4DD8DC07196FBE270067196D /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		4DD8DC08196FBE270067196D /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		4DD8DC09196FBE270067196D /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		4DD8DC0A196FBE270067196D /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		4DD8DC0B196FBE270067196D /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		4DD8DC0C196FBE270067196D /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		4DD8DC0D196FBE270067196D /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		4DD8DC0E196FBE270067196D /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		4DD8DC0F196FBE270067196D /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		4DD8DC10196FBE270067196D /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		4DD8DC11196FBE270067196D /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		4DD8DC12196FBE270067196D /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		4DD8DC13196FBE270067196D /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		4DD8DC14196FBE270067196D /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		4DD8DC15196FBE270067196D /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		4DD8DC16196FBE270067196D /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		4DD8DC1F196FBE590067196D /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		4DD8DC20196FBE590067196D /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		4DD8DC22196FBEA40067196D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4DD8DC24196FBEAA0067196D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DD8DC26196FBEAE0067196D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DD8DC28196FBEB20067196D /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		4DD8DC2A196FBEB70067196D /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		4DD8DC2C196FBEC00067196D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4DD8DC2F196FBF400067196D /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		4DD8DC30196FBF400067196D /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		4DD8DC33196FC4AE0067196D /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		4DD8DC34196FC4AE0067196D /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		4DD8DC36196FC78B0067196D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +110,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD8DC37196FC78B0067196D /* AudioToolbox.framework in Frameworks */,
+				4DD8DC2B196FBEB70067196D /* libz.1.2.5.dylib in Frameworks */,
+				4DD8DC29196FBEB20067196D /* libxml2.2.dylib in Frameworks */,
+				4DD8DC27196FBEAE0067196D /* QuartzCore.framework in Frameworks */,
+				4DD8DC2D196FBEC00067196D /* CoreServices.framework in Frameworks */,
+				4DD8DC25196FBEAA0067196D /* SystemConfiguration.framework in Frameworks */,
+				4DD8DC23196FBEA40067196D /* CFNetwork.framework in Frameworks */,
 				4DD8DBC8196FBD4C0067196D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +138,7 @@
 			children = (
 				4DD8DBCD196FBD4C0067196D /* Kaola */,
 				4DD8DBEB196FBD4C0067196D /* KaolaTests */,
+				4DD8DC03196FBE270067196D /* Vendor */,
 				4DD8DBC6196FBD4C0067196D /* Frameworks */,
 				4DD8DBC5196FBD4C0067196D /* Products */,
 			);
@@ -95,6 +156,13 @@
 		4DD8DBC6196FBD4C0067196D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DD8DC36196FC78B0067196D /* AudioToolbox.framework */,
+				4DD8DC2C196FBEC00067196D /* CoreServices.framework */,
+				4DD8DC2A196FBEB70067196D /* libz.1.2.5.dylib */,
+				4DD8DC28196FBEB20067196D /* libxml2.2.dylib */,
+				4DD8DC26196FBEAE0067196D /* QuartzCore.framework */,
+				4DD8DC24196FBEAA0067196D /* SystemConfiguration.framework */,
+				4DD8DC22196FBEA40067196D /* CFNetwork.framework */,
 				4DD8DBC7196FBD4C0067196D /* Cocoa.framework */,
 				4DD8DBE6196FBD4C0067196D /* XCTest.framework */,
 				4DD8DBC9196FBD4C0067196D /* Other Frameworks */,
@@ -115,9 +183,10 @@
 		4DD8DBCD196FBD4C0067196D /* Kaola */ = {
 			isa = PBXGroup;
 			children = (
+				4DD8DC2E196FBF2D0067196D /* Model */,
+				4DD8DBFB196FBD700067196D /* View */,
 				4DD8DBD9196FBD4C0067196D /* AppDelegate.h */,
 				4DD8DBDA196FBD4C0067196D /* AppDelegate.m */,
-				4DD8DBDC196FBD4C0067196D /* MainMenu.xib */,
 				4DD8DBDF196FBD4C0067196D /* Images.xcassets */,
 				4DD8DBCE196FBD4C0067196D /* Supporting Files */,
 			);
@@ -152,6 +221,87 @@
 				4DD8DBEE196FBD4C0067196D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DD8DBFB196FBD700067196D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DBFC196FBD780067196D /* Resource */,
+				4DD8DBFD196FBDA40067196D /* MainWindowController.h */,
+				4DD8DBFE196FBDA40067196D /* MainWindowController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4DD8DBFC196FBD780067196D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DBDC196FBD4C0067196D /* MainMenu.xib */,
+				4DD8DC00196FBDB50067196D /* MainWindow.xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		4DD8DC03196FBE270067196D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DC1E196FBE590067196D /* RaptureXML */,
+				4DD8DC32196FC4AE0067196D /* AudioStreamer */,
+				4DD8DC04196FBE270067196D /* ASIHTTPRequest */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		4DD8DC04196FBE270067196D /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DC05196FBE270067196D /* ASICacheDelegate.h */,
+				4DD8DC06196FBE270067196D /* ASIDataCompressor.h */,
+				4DD8DC07196FBE270067196D /* ASIDataCompressor.m */,
+				4DD8DC08196FBE270067196D /* ASIDataDecompressor.h */,
+				4DD8DC09196FBE270067196D /* ASIDataDecompressor.m */,
+				4DD8DC0A196FBE270067196D /* ASIDownloadCache.h */,
+				4DD8DC0B196FBE270067196D /* ASIDownloadCache.m */,
+				4DD8DC0C196FBE270067196D /* ASIFormDataRequest.h */,
+				4DD8DC0D196FBE270067196D /* ASIFormDataRequest.m */,
+				4DD8DC0E196FBE270067196D /* ASIHTTPRequest.h */,
+				4DD8DC0F196FBE270067196D /* ASIHTTPRequest.m */,
+				4DD8DC10196FBE270067196D /* ASIHTTPRequestConfig.h */,
+				4DD8DC11196FBE270067196D /* ASIHTTPRequestDelegate.h */,
+				4DD8DC12196FBE270067196D /* ASIInputStream.h */,
+				4DD8DC13196FBE270067196D /* ASIInputStream.m */,
+				4DD8DC14196FBE270067196D /* ASINetworkQueue.h */,
+				4DD8DC15196FBE270067196D /* ASINetworkQueue.m */,
+				4DD8DC16196FBE270067196D /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		4DD8DC1E196FBE590067196D /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DC1F196FBE590067196D /* RXMLElement.h */,
+				4DD8DC20196FBE590067196D /* RXMLElement.m */,
+			);
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
+		4DD8DC2E196FBF2D0067196D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DC2F196FBF400067196D /* Program.h */,
+				4DD8DC30196FBF400067196D /* Program.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4DD8DC32196FC4AE0067196D /* AudioStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8DC33196FC4AE0067196D /* AudioStreamer.h */,
+				4DD8DC34196FC4AE0067196D /* AudioStreamer.m */,
+			);
+			path = AudioStreamer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD8DBD2196FBD4C0067196D /* InfoPlist.strings in Resources */,
+				4DD8DC02196FBDB50067196D /* MainWindow.xib in Resources */,
 				4DD8DBE0196FBD4C0067196D /* Images.xcassets in Resources */,
 				4DD8DBD8196FBD4C0067196D /* Credits.rtf in Resources */,
 				4DD8DBDE196FBD4C0067196D /* MainMenu.xib in Resources */,
@@ -252,8 +403,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD8DC31196FBF400067196D /* Program.m in Sources */,
+				4DD8DC1A196FBE270067196D /* ASIFormDataRequest.m in Sources */,
+				4DD8DC1B196FBE270067196D /* ASIHTTPRequest.m in Sources */,
+				4DD8DC35196FC4AE0067196D /* AudioStreamer.m in Sources */,
+				4DD8DBFF196FBDA40067196D /* MainWindowController.m in Sources */,
 				4DD8DBDB196FBD4C0067196D /* AppDelegate.m in Sources */,
+				4DD8DC1D196FBE270067196D /* ASINetworkQueue.m in Sources */,
+				4DD8DC19196FBE270067196D /* ASIDownloadCache.m in Sources */,
+				4DD8DC1C196FBE270067196D /* ASIInputStream.m in Sources */,
+				4DD8DC17196FBE270067196D /* ASIDataCompressor.m in Sources */,
 				4DD8DBD4196FBD4C0067196D /* main.m in Sources */,
+				4DD8DC18196FBE270067196D /* ASIDataDecompressor.m in Sources */,
+				4DD8DC21196FBE590067196D /* RXMLElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +468,14 @@
 				4DD8DBEF196FBD4C0067196D /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DD8DC00196FBDB50067196D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DD8DC01196FBDB50067196D /* Base */,
+			);
+			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -386,6 +556,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kaola/Kaola-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Kaola/Kaola-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -399,6 +574,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kaola/Kaola-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Kaola/Kaola-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
