@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "RXMLElement.h"
+#import "DOUAudioFile.h"
 
-@interface Program : NSObject
+@interface Program : NSObject <DOUAudioFile>
 
 @property (nonatomic, copy) NSString *hostNames;
 @property (nonatomic, assign) int whichPeriod;

@@ -34,4 +34,9 @@
     return arr;
 }
 
+- (NSURL *)audioFileURL
+{
+    return [NSURL URLWithString:self.programPlayURL];
+}
+
 @end

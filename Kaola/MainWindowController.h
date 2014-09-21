@@ -15,6 +15,7 @@
     IBOutlet NSTableView *programTableView;
     IBOutlet NSButton *playButton;
     IBOutlet NSTextField *positionLabel;
+    IBOutlet NSTextField *statusLabel;
 }
 
 - (IBAction)sliderMoved:(NSSlider *)sender;

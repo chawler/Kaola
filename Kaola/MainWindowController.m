@@ -12,11 +12,16 @@
 
 #import "Program.h"
 #import "AudioStreamer.h"
+#import "DOUAudioStreamer.h"
+
+#import "LZWCompressor.h"
 
 @implementation MainWindowController
 {
     ASIHTTPRequest *_request;
     AudioStreamer  *_streamer;
+//    DOUAudioStreamer *_streamer;
+
     NSTimer        *_progressUpdateTimer;
     NSArray        *_programList;
     NSString       *_currentPlayURL;
@@ -30,6 +35,17 @@
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
+        NSMutableArray *arr = [NSMutableArray array];
+        LZWCompressor *lzw = [[LZWCompressor alloc] initWithArray:arr];
+        if (lzw) {
+            [lzw compressData:[@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=3" dataUsingEncoding:NSUTF8StringEncoding]];
+            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[lzw getArray]];
+            for ( id obj in arr )
+            {
+                printf("%u", [obj unsignedIntValue]);
+            }
+            printf("\n");
+        }
     }
     return self;
 }
@@ -37,7 +53,7 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    _request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=2"]];
+    _request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=3"]];
     _request.delegate = self;
     [_request startAsynchronous];
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
@@ -150,6 +166,32 @@
 		_streamer = nil;
 	}
 }
+
+//- (void)_resetStreamer
+//{
+//    [self _cancelStreamer];
+//    
+//    if (0 == [_tracks count])
+//    {
+//        [_miscLabel setText:@"(No tracks available)"];
+//    }
+//    else
+//    {
+//        Track *track = [_tracks objectAtIndex:_currentTrackIndex];
+//        NSString *title = [NSString stringWithFormat:@"%@ - %@", track.artist, track.title];
+//        [_titleLabel setText:title];
+//        
+//        _streamer = [DOUAudioStreamer streamerWithAudioFile:track];
+//        [_streamer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:kStatusKVOKey];
+//        [_streamer addObserver:self forKeyPath:@"duration" options:NSKeyValueObservingOptionNew context:kDurationKVOKey];
+//        [_streamer addObserver:self forKeyPath:@"bufferingRatio" options:NSKeyValueObservingOptionNew context:kBufferingRatioKVOKey];
+//        
+//        [_streamer play];
+//        
+//        [self _updateBufferingStatus];
+//        [self _setupHintForStreamer];
+//    }
+//}
 
 - (void)updateProgress:(NSTimer *)updatedTimer
 {
