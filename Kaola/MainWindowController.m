@@ -35,17 +35,17 @@
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
-        NSMutableArray *arr = [NSMutableArray array];
-        LZWCompressor *lzw = [[LZWCompressor alloc] initWithArray:arr];
-        if (lzw) {
-            [lzw compressData:[@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=3" dataUsingEncoding:NSUTF8StringEncoding]];
-            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[lzw getArray]];
-            for ( id obj in arr )
-            {
-                printf("%u", [obj unsignedIntValue]);
-            }
-            printf("\n");
-        }
+//        NSMutableArray *arr = [NSMutableArray array];
+//        LZWCompressor *lzw = [[LZWCompressor alloc] initWithArray:arr];
+//        if (lzw) {
+//            [lzw compressData:[@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=3" dataUsingEncoding:NSUTF8StringEncoding]];
+//            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[lzw getArray]];
+//            for ( id obj in arr )
+//            {
+//                printf("%u", [obj unsignedIntValue]);
+//            }
+//            printf("\n");
+//        }
     }
     return self;
 }
@@ -53,17 +53,36 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    _request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=3"]];
+    _request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://v2.kaolafm.com/KAOLA_PHONE/programInfo?mediaId=31,227,424626&page=1"]];
     _request.delegate = self;
     [_request startAsynchronous];
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    
+    float x = pow(2, 0);
+    NSInteger b = 0;
+    NSArray *arr = @[@(1), @(2), @(1), @(2), @(1)];
+    for (int i = 0; i< arr.count; i++ ) {
+        if ([arr[i] integerValue] == 2) {
+            NSInteger a = (1 << (i+1)) - (1 << i);
+            b |= a;
+        }
+    }
+    NSLog(@"%ld", b & 8);
+//    1
+//    2
+//    4
+//    8
+//    16
+//    32
+//    64
+//    128
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     _programList = [Program programsWithXmlData:request.responseData];
     [programTableView reloadData];
-    NSLog(@"%@", _programList);
+//    NSLog(@"%@", _programList);
 }
 
 - (IBAction)sliderMoved:(NSSlider *)sender
